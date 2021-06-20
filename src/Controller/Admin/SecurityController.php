@@ -30,6 +30,8 @@ class SecurityController extends AbstractController
     /**
      * Redirect users after login based on the granted ROLE
      * @Route("/login/redirect", name="app_user_login_redirect")
+     * @param Request $request
+     * @return RedirectResponse
      */
     public function loginRedirectAction(Request $request): RedirectResponse
     {
