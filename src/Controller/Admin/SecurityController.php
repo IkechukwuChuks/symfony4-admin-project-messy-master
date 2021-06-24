@@ -43,7 +43,7 @@ class SecurityController extends AbstractController
         {
             return $this->redirectToRoute('app_admin_user_index');
         } else {
-            return $this->redirectToRoute('app_user_login');
+            return $this->redirectToRoute('app_user_logout');
         }
     }
 

@@ -23,7 +23,7 @@ security:
                         password: $argon2id$v=19$m=65536,t=4,p=1$MoLPUVJhxAIwNI7BLd934Q$1SJ3QWWEzNwtJglmhnqDcMp9XYHWKB5EYT/KAvjYAp0
                         roles: 'ROLE_SUPER_ADMIN'
                     ryan:
-                        password: $2y$12$dr8nOj2ogn3qdUUS0jB0meII6PiBMpN5YJTOA08r0PgpJRkegYgZS
+                        password: $argon2id$v=19$m=65536,t=4,p=1$/ATq974aBThtDV1fiVHMAg$1btAJVVMmM3XfLjdvzCWn6sLHfsV90Una8LQwTjFcxw
                         roles: 'ROLE_SUPER_ADMIN'
         user_db_provider:
             entity:

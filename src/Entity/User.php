@@ -107,7 +107,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
      * @return int
      */
 
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -115,7 +115,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @return string
      */
-    public function getName(): string
+    public function getName()
     {
         return $this->name;
     }
@@ -123,7 +123,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @param string $name
      */
-    public function setName(string $name)
+    public function setName($name)
     {
         $this->name = $name;
     }
@@ -131,7 +131,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @return string
      */
-    public function getLastname(): string
+    public function getLastname()
     {
         return $this->lastname;
     }
@@ -139,7 +139,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @param string $lastname
      */
-    public function setLastname(string $lastname)
+    public function setLastname($lastname)
     {
         $this->lastname = $lastname;
     }
@@ -147,7 +147,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @return string
      */
-    public function getUsername(): string
+    public function getUsername()
     {
         return $this->username;
     }
@@ -155,7 +155,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @param string $username
      */
-    public function setUsername(string $username)
+    public function setUsername($username)
     {
         $this->username = $username;
     }
@@ -163,7 +163,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @return string
      */
-    public function getEmail(): string
+    public function getEmail()
     {
         return $this->email;
     }
@@ -171,7 +171,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @param string $email
      */
-    public function setEmail(string $email)
+    public function setEmail($email)
     {
         $this->email = $email;
     }
@@ -237,7 +237,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @return string
      */
-    public function getPassword(): string
+    public function getPassword()
     {
         return $this->password;
     }
@@ -245,7 +245,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @param string $password
      */
-    public function setPassword(string $password)
+    public function setPassword($password)
     {
         $this->password = $password;
     }
@@ -253,7 +253,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @return string
      */
-    public function getPlainPassword(): string
+    public function getPlainPassword()
     {
         return $this->plainPassword;
     }
@@ -261,7 +261,7 @@ class User implements SoftDeletableInterface, UserInterface, EquatableInterface
     /**
      * @param string $plainPassword
      */
-    public function setPlainPassword(string $plainPassword)
+    public function setPlainPassword($plainPassword)
     {
         $this->plainPassword = $plainPassword;
     }
