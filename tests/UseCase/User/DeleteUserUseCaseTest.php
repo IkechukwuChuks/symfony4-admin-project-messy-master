@@ -7,6 +7,7 @@ use App\UseCase\User\DeleteUserUseCase;
 use Doctrine\ORM\EntityManagerInterface;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\Security\Core\Security;
 
 class DeleteUserUseCaseTest extends TestCase
 {
@@ -22,12 +23,17 @@ class DeleteUserUseCaseTest extends TestCase
     private $deleteUserUseCase;
 
     /**
+     * @var Security
+     */
+    private $security;
+
+    /**
      * This method is called before each test.
      */
     protected function setUp()
     {
         $this->em = $this->createMock(EntityManagerInterface::class);
-        $this->deleteUserUseCase = new DeleteUserUseCase($this->em);
+        $this->deleteUserUseCase = new DeleteUserUseCase($this->em, $this->security);
     }
 
     public function testDelete()

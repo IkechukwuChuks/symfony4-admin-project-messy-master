@@ -31,6 +31,7 @@ abstract class AdminWebTestCase extends BaseWebTestCase
         /** @var AbstractExecutor $executor */
         $executor = $this->loadFixtures($this->getFixtureClasses());
         $this->fixtures = $executor->getReferenceRepository();
+
         /**
          * @var User $adminUser
          */
