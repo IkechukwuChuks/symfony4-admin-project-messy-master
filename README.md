@@ -40,7 +40,7 @@ To launch project on docker, run
 cd ./docker && docker-compose up
 ```
 
-You can now access project in browser using: http://localhost:80
+You can now access project in browser using: http://localhost:8080
 
 To run Symfony commands execute frock `docker` directory:
 ```shell script
